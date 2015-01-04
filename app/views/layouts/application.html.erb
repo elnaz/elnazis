@@ -9,22 +9,22 @@
 </head>
 <body>
 	<div id="body">
-			<div id="header">			
-				<div id="logo"><span><a href="./home.html">em</a> elnaz moshfeghian</span></div>
-				<a id="menu-toggle" href="#">Menu</a>
-				<div id="nav">
-					<ul class="nav-content">
-						<li><a class="current" href="">Home</a></li>
-						<li><a href="./blog-index.html">Blog</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-				<div class="clear"></div>	
+		<div id="header">			
+			<div id="logo"><span><a href="<%= root_path %>">em</a> elnaz moshfeghian</span></div>
+			<a id="menu-toggle" href="#">Menu</a>
+			<div id="nav">
+				<ul class="nav-content">
+					<li><%= link_to 'Home', root_path, class: navClass('welcome') %></li>
+					<li><%= link_to 'Blog', writing_index_path, class: navClass('writing') %></li>
+					<li><%= link_to 'Projects', root_path + '#projects', class: navClass('working') %></li>
+					<li><%= link_to 'About', root_path + '#about' %></li>
+					<li><%= link_to 'Contact', '#about' %></li>
+				</ul>
 			</div>
+			<div class="clear"></div>	
+		</div>
 
-			<%= yield %>
+		<%= yield %>
 			
 	</div>
 	<div id="footer">
