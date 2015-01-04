@@ -1,0 +1,45 @@
+@media screen and (max-width: 600px){
+	/* ---------------------- Basics ------------------------- */
+	.c2l, .c2r { float: none; width: auto; }
+	
+	.txt { min-width: 200px; width: 75%; }
+	.txt-med { min-width: 200px; }
+	
+	/* ---------------------- Header ------------------------ */
+	
+	#logo { font-size: 1.3em; }
+	#logo a { height: 40px; margin-right: 5px; width: 40px; } 
+	#logo span { line-height: 35px; }
+	
+	#menu-toggle { font-size: 1em; margin-top: 10px; padding: 0; }
+	
+	/* ----------------------- Main ------------------------- */
+	
+	.about { 
+		-webkit-column-count: 1; 
+		-moz-column-count: 1; 
+		column-count: 1; 
+		padding-right: 0px; 
+	}
+	.about p { margin-top: 0px; }
+	
+	#contact-links { margin-left: 15%; }
+	#contact-links li { margin-top: 15px; }
+	
+	#intro { font-size: 1.1em; }
+	
+	.posts li { overflow: auto;  width: 100%; max-width: 100%; }
+	.posts li img { float: left; height: auto; width: 25%; min-height: 75px; }
+	.posts .title { display: inline-block; float: left; width: 70%; }
+		
+	.projects li { width: 100%; max-width: 100%; }
+	.projects li img { 
+		float: left; 
+		height: auto; 
+		width: 25%; 
+		margin-right: 8px; 
+		min-height: 75px; 
+	}
+	
+		.project .subtitle { display: inline-block; float: left; width: 70%; }
+}

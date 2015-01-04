@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Elnazis</title>
+  <title>Elnaz Moshfeghian</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.png' %>
 </head>
 <body>
+	<div id="body">
+			<div id="header">			
+				<div id="logo"><span><a href="./home.html">em</a> elnaz moshfeghian</span></div>
+				<a id="menu-toggle" href="#">Menu</a>
+				<div id="nav">
+					<ul class="nav-content">
+						<li><a class="current" href="">Home</a></li>
+						<li><a href="./blog-index.html">Blog</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>	
+			</div>
 
-<%= yield %>
-
+			<%= yield %>
+			
+			<div id="footer">
+				<h2 id="contact">Contact</h2>
+				<dl class="c2l form" id="contact-form">
+					<dt>Name</dt>
+					<dd><input class="txt-med" type="text"/></dd>
+					
+					<dt>Email</dt>
+					<dd><input class="txt-med" type="text"/></dd>
+					
+					<dt>Message</dt>
+					<dd><textarea class="txt"></textarea></dd>
+					
+					<dt>&nbsp;</dt>
+					<dd><input class="btn" type="submit" value="Send"></input></dd>
+				</dl>
+				
+				<div class="c2r" >
+					<ul id="contact-links">
+						<li><a href="https://github.com/elnaz"><i class="fa fa-github fa-2x"></i></a></li>					
+						<li><a href="https://twitter.com/elnazem"><i class="fa fa-twitter fa-2x"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/elnazm"><i class="fa fa-linkedin fa-2x"></i></a></li>
+						<li><a href="https://plus.google.com/+ElnazMoshfeghian"><i class="fa fa-google-plus fa-2x"></i></a></li>
+						<li><a href="http://instagram.com/elnazem"><i class="fa fa-instagram fa-2x"></i></a></li>	
+						<li><a href="https://bitbucket.org/elnaz"><i class="fa fa-bitbucket fa-2x"></i></a></li>				
+					</ul>
+				</div>
+				<div class="clear"></div>
+		    </div>
+		
+			<div id="menu" class="">
+				<ul class="nav-content">
+					<li class="current"><a href="./home.html">Home</a></li>
+					<li><a href="./blog-index.html">Blog</a></li>
+					<li><a href="./home.html#projects">Projects</a></li>
+					<li><a href="./home.html#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+	</div>
 </body>
 </html>

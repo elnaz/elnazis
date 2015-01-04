@@ -1,0 +1,15 @@
+@media screen and (max-width: 835px){
+	/* ---------------------- Basics ------------------------- */
+	.c2l, .c2r { float: none; width: auto; }
+	
+	.txt { width: 75%; }
+	
+	/* ----------------------- Main ------------------------- */
+	
+	#contact-links { margin-left: 20%; }
+	#contact-links li { margin-top: 15px; }
+	
+	.posts li { width: 46%; }
+	
+	.projects li { width: 46%; }
+}
