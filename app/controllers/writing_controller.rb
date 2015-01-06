@@ -1,4 +1,8 @@
 class WritingController < ApplicationController
+	def index
+	  @writings = Writing.all
+	end
+	
 	def show
 	  @writing = Writing.find(params[:id])
 	end
