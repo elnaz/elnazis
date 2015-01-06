@@ -8,13 +8,31 @@ class WritingController < ApplicationController
 	end
 	
 	def new
+	  @writing = Writing.new
+	end
+	
+	def edit
+	  @writing = Writing.find(params[:id])
 	end
 	
 	def create
-	  @writing = Writing.new(writing_params())
+	  @writing = Writing.new(writing_params)
 	  
-	  @writing.save
-	  redirect_to @writing
+	  if @writing.save
+	  	redirect_to @writing
+	  else
+	    render 'new'
+	  end
+	end
+	
+	def update 
+	  @writing = Writing.find(params[:id])
+	  
+	  if @writing.update(writing_params)
+	    redirect_to @writing
+	  else
+	    render 'edit'
+	  end
 	end
 	
 	private
