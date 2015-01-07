@@ -1,6 +1,6 @@
 class WritingController < ApplicationController
 	def index
-	  @writings = Writing.all
+	  @writings = Writing.all.order(published_at: :desc)
 	end
 	
 	def show
