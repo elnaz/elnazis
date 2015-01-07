@@ -35,6 +35,13 @@ class WritingController < ApplicationController
 	  end
 	end
 	
+	def destroy
+	  @writing = Writing.find(params[:id])
+	  @writing.destroy
+	  
+	  redirect_to writing_index_path
+	end
+	
 	private
 	  def writing_params
 	  	params.require(:writing).permit(:title, :body, :published_at)

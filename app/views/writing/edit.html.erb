@@ -3,4 +3,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Cancel', writing_path(@writing) %>
+<span class="r"><%= link_to 'Delete', writing_path(@writing), method: :delete, data: { confirm: 'Are you sure?' } %></span>

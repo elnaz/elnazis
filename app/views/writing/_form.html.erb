@@ -10,23 +10,18 @@
     </div>
   <% end %>
   
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
- 
-  <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-  </p>
-  
-  <p>
-    <%= f.label :published_at %><br>
-    <%= f.datetime_select :published_at %>
-  </p>
- 
-  <p>
-    <%= f.submit %>
-  </p>
- 
+  <dl class="form">
+    <dt><%= f.label :title %></dt>
+	<dd class="field"><%= f.text_field :title, :class => 'txt-med' %></dd>	 
+	
+	<dt><%= f.label :body %></dt>
+	<dd class="field"><%= f.text_area :body, :class => 'txt', :rows => 15 %></dd>
+	 
+	<dt><%= f.label :published_at %></dt>
+	<dd class="field"><%= f.date_field :published_at %></dd>	 
+	
+	<dt></dt>
+	<dd class="field"><%= f.submit 'Save', :class => 'btn' %> <%= link_to 'Cancel', writing_index_path %></dd>
+  </dl>
 <% end %>
+<div class="clear"></div>
