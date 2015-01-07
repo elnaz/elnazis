@@ -2,9 +2,9 @@
 
 <h1 id="post-title"><%= yield :title %></h1>
 			
-<p class="post-date r"><%= @writing.published_at.strftime("%b %-d, %Y") %></p>
+<p id="post-date r"><%= @writing.published_at.strftime("%b %-d, %Y") %></p>
 
-<div class="post-body">
+<div id="post-body">
 	<%= @writing.body %>
 </div>
 
