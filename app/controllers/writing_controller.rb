@@ -1,4 +1,7 @@
 class WritingController < ApplicationController
+	
+	http_basic_authenticate_with name: ENV["USERNAME"], password: ENV["PASSWORD"], except: [:index, :show]
+
 	def index
 	  @writings = Writing.all.order(published_at: :desc)
 	end
