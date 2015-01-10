@@ -29,19 +29,21 @@
 	</div>
 	<div id="footer">
 				<h2 id="contact">Contact</h2>
-				<dl class="c2l form" id="contact-form">
-					<dt>Name</dt>
-					<dd><input class="txt-med" type="text"/></dd>
-					
-					<dt>Email</dt>
-					<dd><input class="txt-med" type="text"/></dd>
-					
-					<dt>Message</dt>
-					<dd><textarea class="txt"></textarea></dd>
-					
-					<dt>&nbsp;</dt>
-					<dd><input class="btn" type="submit" value="Send"></input></dd>
-				</dl>
+				<%= form_for :contact do |f| %>
+					<dl class="c2l form" id="contact-form">
+						<dt><%= f.label :name %></dt>
+						<dd class="field"><%= f.text_field :name, :class => 'txt-med'%></dd>
+						
+						<dt><%= f.label :email %></dt>
+						<dd class="field"><%= f.text_field :email, :class => 'txt-med' %></dd>
+						
+						<dt><%= f.label :message %></dt>
+						<dd class="field"><%= f.text_area :message, :class => 'txt', :rows => 7 %></dd>
+						
+						<dt>&nbsp;</dt>
+						<dd class="field"><%= f.submit 'Send', :class => 'btn'%></input></dd>
+					</dl>
+				<% end %>
 				
 				<div class="c2r" >
 					<ul id="contact-links">
