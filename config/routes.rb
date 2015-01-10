@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/working/alternative-spring-break', to: 'working#asb'
 
   resources :writing
+  resources :messages
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'

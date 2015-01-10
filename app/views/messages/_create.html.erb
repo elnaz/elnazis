@@ -1,0 +1,26 @@
+<%= form_for @message, url: '/messages/create', html: { remote: true } do |f| %>
+	<% if @message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@message.errors.count, 'error') %> prohibited your message from being sent:</h2>
+      <ul>
+  		<% @message.errors.full_messages.each do |msg| %>
+  		  <li><%= msg %></li>
+  		<% end %>    
+      </ul>
+    </div>
+    <% end %>
+
+	<dl class="c2l form" id="contact-form">
+		<dt><%= f.label :name %></dt>
+		<dd class="field"><%= f.text_field :name, :class => 'txt-med'%></dd>
+		
+		<dt><%= f.label :email %></dt>
+		<dd class="field"><%= f.text_field :email, :class => 'txt-med' %></dd>
+		
+		<dt><%= f.label :body, 'Message' %></dt>
+		<dd class="field"><%= f.text_area :body, :class => 'txt', :rows => 5 %></dd>
+		
+		<dt>&nbsp;</dt>
+		<dd class="field"><%= f.submit 'Send', :class => 'btn'%></input></dd>
+	</dl>
+<% end %>

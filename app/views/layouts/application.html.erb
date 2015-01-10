@@ -27,45 +27,47 @@
 		<%= yield %>
 			
 	</div>
+	
 	<div id="footer">
-				<h2 id="contact">Contact</h2>
-				<%= form_for :contact do |f| %>
-					<dl class="c2l form" id="contact-form">
-						<dt><%= f.label :name %></dt>
-						<dd class="field"><%= f.text_field :name, :class => 'txt-med'%></dd>
-						
-						<dt><%= f.label :email %></dt>
-						<dd class="field"><%= f.text_field :email, :class => 'txt-med' %></dd>
-						
-						<dt><%= f.label :message %></dt>
-						<dd class="field"><%= f.text_area :message, :class => 'txt', :rows => 7 %></dd>
-						
-						<dt>&nbsp;</dt>
-						<dd class="field"><%= f.submit 'Send', :class => 'btn'%></input></dd>
-					</dl>
-				<% end %>
+		<h2 id="contact">Contact</h2>				
+		<%= form_for [@message, Message.new], :remote => true do |f| %>
+			<div id="contact-notice"><p></p></div>
+			<dl class="c2l form" id="contact-form">
+				<dt><%= f.label :name %></dt>
+				<dd class="field"><%= f.text_field :name, :class => 'txt-med'%></dd>
 				
-				<div class="c2r" >
-					<ul id="contact-links">
-						<li><a href="https://github.com/elnaz"><i class="fa fa-github fa-2x"></i></a></li>					
-						<li><a href="https://twitter.com/elnazem"><i class="fa fa-twitter fa-2x"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/elnazm"><i class="fa fa-linkedin fa-2x"></i></a></li>
-						<li><a href="https://plus.google.com/+ElnazMoshfeghian"><i class="fa fa-google-plus fa-2x"></i></a></li>
-						<li><a href="http://instagram.com/elnazem"><i class="fa fa-instagram fa-2x"></i></a></li>	
-						<li><a href="https://bitbucket.org/elnaz"><i class="fa fa-bitbucket fa-2x"></i></a></li>				
-					</ul>
-				</div>
-				<div class="clear"></div>
-		    </div>
+				<dt><%= f.label :email %></dt>
+				<dd class="field"><%= f.text_field :email, :class => 'txt-med' %></dd>
+				
+				<dt><%= f.label :body, 'Message' %></dt>
+				<dd class="field"><%= f.text_area :body, :class => 'txt', :rows => 5 %></dd>
+				
+				<dt>&nbsp;</dt>
+				<dd class="field"><%= f.submit 'Send', :class => 'btn'%></input></dd>
+			</dl>
+		<% end %>
+		
+		<div class="c2r" >
+			<ul id="contact-links">
+				<li><a href="https://github.com/elnaz"><i class="fa fa-github fa-2x"></i></a></li>					
+				<li><a href="https://twitter.com/elnazem"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/elnazm"><i class="fa fa-linkedin fa-2x"></i></a></li>
+				<li><a href="https://plus.google.com/+ElnazMoshfeghian"><i class="fa fa-google-plus fa-2x"></i></a></li>
+				<li><a href="http://instagram.com/elnazem"><i class="fa fa-instagram fa-2x"></i></a></li>	
+				<li><a href="https://bitbucket.org/elnaz"><i class="fa fa-bitbucket fa-2x"></i></a></li>				
+			</ul>
+		</div>
+		<div class="clear"></div>
+    </div>
 
 	<div id="menu" class="">
-				<ul class="nav-content">
-					<li class="current"><a href="./home.html">Home</a></li>
-					<li><a href="./blog-index.html">Blog</a></li>
-					<li><a href="./home.html#projects">Projects</a></li>
-					<li><a href="./home.html#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>	
+		<ul class="nav-content">
+			<li class="current"><a href="./home.html">Home</a></li>
+			<li><a href="./blog-index.html">Blog</a></li>
+			<li><a href="./home.html#projects">Projects</a></li>
+			<li><a href="./home.html#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>	
 </body>
 </html>
