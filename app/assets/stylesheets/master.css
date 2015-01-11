@@ -38,7 +38,9 @@ p { font-size: 1.2em; }
 }
 
 .form dd { float: right; margin: 0 0 0.5em 0.25em; width: 81%; }
-.form dt { clear: both; float: left; line-height: 1.5; text-align: right; width: 15%;  }
+.form dt { clear: both; font-weight: bold; float: left; line-height: 1.5; text-align: right; width: 15%;  }
+.form label.error { color: #621268; font-weight: bold; }
+.form input.error, .form textarea.error { border: 2px solid #621268; }
 
 .txt, .txt-med {
     border: 1px solid #ccc;

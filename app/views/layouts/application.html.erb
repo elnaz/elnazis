@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'favicon.png' %>
+  <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
 </head>
 <body>
 	<div id="body">
@@ -34,13 +35,13 @@
 			<div id="contact-notice"><p></p></div>
 			<dl class="c2l form" id="contact-form">
 				<dt><%= f.label :name %></dt>
-				<dd class="field"><%= f.text_field :name, :class => 'txt-med'%></dd>
+				<dd class="field"><%= f.text_field :name, :class => 'required txt-med' %></dd>
 				
 				<dt><%= f.label :email %></dt>
-				<dd class="field"><%= f.text_field :email, :class => 'txt-med' %></dd>
+				<dd class="field"><%= f.text_field :email, :class => 'email required txt-med', :type => 'email' %></dd>
 				
 				<dt><%= f.label :body, 'Message' %></dt>
-				<dd class="field"><%= f.text_area :body, :class => 'txt', :rows => 5 %></dd>
+				<dd class="field"><%= f.text_area :body, :class => 'required txt', :rows => 5, :maxlength => 2500 %></dd>
 				
 				<dt>&nbsp;</dt>
 				<dd class="field"><%= f.submit 'Send', :class => 'btn'%></input></dd>
