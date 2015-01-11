@@ -12,7 +12,7 @@
 	<div id="body">
 		<div id="header">			
 			<div id="logo"><span><a href="<%= root_path %>">em</a> elnaz moshfeghian</span></div>
-			<a id="menu-toggle" href="#">Menu</a>
+			<a href="#" id="menu-toggle">Menu</a>
 			<div id="nav">
 				<ul class="nav-content">
 					<li><%= link_to 'Home', root_path, class: navClass('welcome') %></li>
@@ -63,11 +63,11 @@
 
 	<div id="menu" class="">
 		<ul class="nav-content">
-			<li class="current"><i class="fa fa-home"></i><a href="./home.html">Home</a></li>
-			<li><i class="fa fa-newspaper-o"></i><a href="./blog-index.html">Blog</a></li>
-			<li><i class="fa fa-bullhorn"></i><a href="./home.html#projects">Projects</a></li>
-			<li><i class="fa fa-info-circle"></i><a href="./home.html#about">About</a></li>
-			<li><i class="fa fa-send-o"></i><a href="#contact">Contact</a></li>
+			<li class=<%= navClass('welcome') %>><i class="fa fa-home"></i><%= link_to 'Home', root_path %></li>
+      <li class=<%= navClass('writing') %>><i class="fa fa-newspaper-o"></i><%= link_to 'Blog', writing_index_path %></li>
+      <li class=<%= navClass('working') %>><i class="fa fa-bullhorn"></i><%= link_to 'Projects', root_path + '#projects' %></li>
+      <li><i class="fa fa-info-circle"></i><%= link_to 'About', root_path + '#about' %></li>
+      <li><i class="fa fa-send-o"></i><%= link_to 'Contact', '#contact' %></li> 
 		</ul>
 	</div>	
 </body>
