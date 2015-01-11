@@ -4,7 +4,7 @@
 	    height: 100%;
 	    overflow: scroll;
 	    position: absolute;
-		right: -300px;
+      right: -300px;
 	    top: 0;
 	    width: 200px;
 	    z-index: 1000;
@@ -12,13 +12,8 @@
 	#menu ul { list-style: none; }
 	#menu .nav-content { margin: 0; padding: 0; }
 	#menu .nav-content li.current { background: rgba(255, 255, 255, 0.3); }
-	#menu .nav-content li { 
-		border-bottom: 1px solid black; 
-		display: block; 
-		float: none; 
-		margin: 0; 
-		padding: 12px 15px; 
-	}
+	#menu .nav-content li { display: block; float: none; margin: 0; padding: 12px 15px; }
+	#menu .nav-content li i { margin-right: 0.5em; }
 	
 	#menu-toggle { display: inline-block; }
 	
