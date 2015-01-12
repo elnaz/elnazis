@@ -10,10 +10,14 @@
 	.about { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; padding-right: 0px; }
 	.about p { margin-top: 0px; }
 	
+	#body {	padding: 0 20px 70px; }
+	
 	#contact-links { margin-left: 15%; }
 	#contact-links li { margin-top: 15px; }
 	
-	#intro { font-size: 1.1em; }
+	#footer { padding: 2px 20px 70px; }
+	
+	#intro { font-size: 1.2em; }
 	
 	#logo { font-size: 1.3em; }
 	#logo a { height: 40px; margin-right: 5px; width: 40px; } 
