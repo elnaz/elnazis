@@ -6,8 +6,8 @@ var ready = function(){
     return false; 
   });    
   $('html').on('click touchstart', function (e) {
-		if($('#menu').is(':visible') && !$('#menu').is(e.target)){
-			$('#menu').hide().css({ right: '-300px' });						
+		if($('#menu').is(':visible') && $('#menu').has(e.target).length === 0){
+			$('#menu').hide().css({ right: '-300px' });
 		}						
 	});
 	
