@@ -1,7 +1,6 @@
 @media screen and (max-width: 945px){
 	#menu {
 	    background: #76B543;
-	    height: 100%;
 	    overflow: scroll;
 	    position: absolute;
       right: -300px;
