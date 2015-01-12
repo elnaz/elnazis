@@ -54,8 +54,7 @@ p { font-size: 1.2em; }
 .txt-med { width: 47%; }
 
 /* ----------------------- Main ------------------------- */
-.about { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; padding-right: 15px; }
-.about p { margin-top: 0px; }
+.about { width: 71%; }
 
 #body {	margin-left: auto; margin-right: auto; max-width: 925px; padding: 0 60px 70px; } 
 

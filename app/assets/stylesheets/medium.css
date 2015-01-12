@@ -5,6 +5,7 @@
 	.txt { width: 75%; }
 	
 	/* ----------------------- Main ------------------------- */
+	.about { width: 90%; }
 	
 	#contact-links { margin-left: 20%; }
 	#contact-links li { margin-top: 15px; }

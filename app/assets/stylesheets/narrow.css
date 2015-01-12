@@ -7,8 +7,8 @@
 		
 	/* ----------------------- Main ------------------------- */
 	
-	.about { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; padding-right: 0px; }
-	.about p { font-weight: bolder; margin-top: 0px; }
+	.about { width: 100%; }
+	.about p { font-weight: bolder; }
 	
 	#body {	padding: 0 20px 70px; }
 	

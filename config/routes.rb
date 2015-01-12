@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   get '/working/chicago-women', to: 'working#cwta'
   get '/working/student-government', to: 'working#sga'
   get '/working/alternative-spring-break', to: 'working#asb'
-
+  get '/about', to: 'static_pages#about'
+  
   resources :writing
   resources :messages
 
