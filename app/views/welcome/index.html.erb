@@ -4,17 +4,7 @@
 <div class="clear"></div>
 
 <h2>Blog</h2>
-<ul class="posts">
-	<% @writings.each do |writing| %>
-	<li>
-		<a href="<%= writing_path(writing.id) %>">
-			<%= image_tag writing.image.url(:medium) %>
-			<p class="title"><%= writing.title %><span class="date"><%= writing.published_at.strftime("%b %-d, %Y") %></span></p>
-		</a>
-	</li>	
-	<% end %>
-</ul>
-<div class="clear"></div>
+<%= render 'writing/list' %>
 <p id="more-posts"><%= link_to raw('Read more <i class="fa fa-angle-right"></i>'), writing_index_path %></p>
 
 <h2 id="projects">Projects</h2>

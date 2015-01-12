@@ -1,14 +1,4 @@
 <% title "Blog" %>
 
 <h1><%= yield :title %></h1>
-<ul class="posts">
-	<% @writings.each do |writing| %>
-	<li>
-		<a href="<%= writing_path(writing.id) %>">
-			<img src="http://dummyimage.com/200" />
-			<p class="title"><%= writing.title %><span class="date"><%= writing.published_at.strftime("%b %-d, %Y") %></span></p>
-		</a>
-	</li>	
-	<% end %>
-</ul>
-<div class="clear"></div>
+<%= render 'writing/list' %>
