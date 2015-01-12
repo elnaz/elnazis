@@ -1,14 +1,9 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  get '/working/arctic-collaboration', to: 'working#arctic'
-  get '/working/schoolcuts', to: 'working#schoolcuts'
-  get '/working/benevolent', to: 'working#benevolent'
-  get '/working/chicago-women', to: 'working#cwta'
-  get '/working/student-government', to: 'working#sga'
-  get '/working/alternative-spring-break', to: 'working#asb'
   get '/about', to: 'static_pages#about'
   
+  resources :working
   resources :writing
   resources :messages
 
