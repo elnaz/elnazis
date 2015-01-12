@@ -47,6 +47,6 @@ class WritingController < ApplicationController
 	
 	private
 	  def writing_params
-	  	params.require(:writing).permit(:title, :body, :published_at)
+	  	params.require(:writing).permit(:title, :body, :image, :published_at)
 	  end
 end

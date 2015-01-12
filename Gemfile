@@ -38,6 +38,7 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'paperclip', '~> 4.2'
 gem 'rails_12factor', group: :production
 
 ruby '2.1.5'
