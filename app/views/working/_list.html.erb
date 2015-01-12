@@ -1,0 +1,10 @@
+<ul class="projects">
+	<% @workings.each do |working| %>
+	<li>
+		<a href="<%= working_path(working.id) %>">
+			<p class="project"><%= working.title %> <span class="subtitle"><%= working.subtitle %></span></p>
+		</a>
+	</li>	
+	<% end %>
+</ul>
+<div class="clear"></div>

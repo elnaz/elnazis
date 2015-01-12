@@ -5,33 +5,8 @@
 
 <h2>Blog</h2>
 <%= render 'writing/list' %>
-<p id="more-posts"><%= link_to raw('Read more <i class="fa fa-angle-right"></i>'), writing_index_path %></p>
+<p class="more-items"><%= link_to raw('Read more <i class="fa fa-angle-right"></i>'), writing_index_path %></p>
 
 <h2 id="projects">Projects</h2>
-<ul class="projects">				
-	<li>
-		<a href=""><img src="" /> 
-		<p class="project">IARPC Collaborations <span class="subtitle">Accelerating Arctic research</span></p></a>
-	</li>
-	<li>
-		<a href=""><img src="" /> 
-		<p class="project">SchoolCuts.org <span class="subtitle">Illuminating the 2013 closings</span></p></a>
-	</li>
-	<li>
-		<a href=""><img src="" /> 
-		<p class="project">Benevolent.net <span class="subtitle">Making giving personal</span></p></a>
-	</li>
-	<li>
-		<a href=""><img src="" /> 
-		<p class="project">Chi. Women Take Action<span class="subtitle">Forging a women's agenda</span></p></a>
-	</li>
-	<li>
-		<a href=""><img src="" /> 
-		<p class="project">IIT Student Government <span class="subtitle">Amplifying the student voice</span></p></a>
-	</li>
-	<li>
-		<a href=""><img src="" /> 
-		<p class="project">Alternative Spring Break <span class="subtitle">Building homes with Habitat</span></p></a>
-	</li>
-</ul>
-<div class="clear"></div>
+<%= render 'working/list' %>
+<p class="more-items"><%= link_to raw('View more <i class="fa fa-angle-right"></i>'), working_index_path %></p>

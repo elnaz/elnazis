@@ -1,0 +1,27 @@
+<%= form_for @working do |f| %>  
+  <% if @working.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@working.errors.count, "error") %> prohibited this project from being saved:</h2>
+      <ul>
+  		<% @working.errors.full_messages.each do |msg| %>
+  		  <li><%= msg %></li>
+  		<% end %>    
+      </ul>
+    </div>
+  <% end %>
+  
+  <dl class="form">
+    <dt><%= f.label :title %></dt>
+  	<dd class="field"><%= f.text_field :title, :class => 'txt-med' %></dd>
+  	
+  	<dt><%= f.label :subtitle %></dt>
+  	<dd class="field"><%= f.text_field :subtitle, :class => 'txt-med' %></dd>	 
+  	
+  	<dt><%= f.label :body %></dt>
+  	<dd class="field"><%= f.text_area :body, :class => 'txt', :rows => 15 %></dd>  
+  	
+  	<dt></dt>
+  	<dd class="field"><%= f.submit 'Save', :class => 'btn' %> <%= link_to 'Cancel', working_index_path %></dd>
+  </dl>
+<% end %>
+<div class="clear"></div>

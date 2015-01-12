@@ -96,7 +96,7 @@ p { font-size: 1.2em; }
 	text-transform: uppercase; 
 }
 
-#more-posts { 
+.more-items { 
 	font-size: 0.9em; 
 	font-weight: bold; 
 	margin-top: 0; 
@@ -104,8 +104,8 @@ p { font-size: 1.2em; }
 	text-align: right; 
 	text-transform: uppercase; 
 }
-#more-posts a { color: #000; }
-#more-posts a:hover { background: #76B543; padding: .2em .4em; }
+.more-items a { color: #000; }
+.more-items a:hover { background: #76B543; padding: .2em .4em; }
 
 #nav { display: inline-block; float: right; }
 #nav a:hover { background: #76B543; padding: .2em .4em; }

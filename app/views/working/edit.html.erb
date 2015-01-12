@@ -1,0 +1,6 @@
+<% title 'Edit project' %>
+<h1><%= yield :title %></h1>
+
+<%= render 'form' %>
+
+<span class="r"><%= link_to 'Delete', working_path(@working), method: :delete, data: { confirm: 'Are you sure?' } %></span>
