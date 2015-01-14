@@ -24,7 +24,7 @@
   	<dd class="field"><%= f.file_field :image %></dd>
   	 
   	<dt><%= f.label :published_at %></dt>
-  	<dd class="field"><%= f.date_field :published_at, :value => Time.now.strftime('%Y-%m-%d') %></dd>	 
+  	<dd class="field"><%= f.date_field :published_at, :prompt => Time.now.strftime('%Y-%m-%d') %></dd>	 
   	
   	<dt></dt>
   	<dd class="field"><%= f.submit 'Save', :class => 'btn' %> <%= link_to 'Cancel', writing_index_path %></dd>
