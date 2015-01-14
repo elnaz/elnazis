@@ -26,7 +26,7 @@
 	
 	.posts li { overflow: auto;  width: 100%; max-width: 100%; }
 	.posts li img { float: left; height: auto; width: 25%; min-height: 75px; }
-	.posts .title { display: inline-block; float: left; width: 70%; }
+	.posts .title { display: inline-block; font-size: 1.1em; float: left; width: 70%; }
 		
 	.projects li { width: 100%; max-width: 100%; }
 	.projects li img { float: left; height: auto; width: 25%; margin-right: 8px; min-height: 75px; }
