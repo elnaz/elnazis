@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   get '/about', to: 'static_pages#about'
   
-  resources :working
+  resources :working, param: :slug
   resources :writing
   resources :messages
 

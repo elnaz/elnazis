@@ -4,7 +4,7 @@ class WorkingController < ApplicationController
   end
   
   def show
-	  @working = Working.find(params[:id])
+	  @working = Working.find_by_slug(params[:slug])
 	end
   
   def new
@@ -12,7 +12,7 @@ class WorkingController < ApplicationController
 	end
 	
 	def edit
-	  @working = Working.find(params[:id])
+	  @working = Working.find_by_slug(params[:slug])
 	end
 	
 	def create
@@ -26,7 +26,7 @@ class WorkingController < ApplicationController
 	end
 	
 	def update 
-	  @working = Working.find(params[:id])
+	  @working = Working.find_by_slug(params[:slug])
 	  
 	  if @working.update(working_params)
 	    redirect_to @working
@@ -36,7 +36,7 @@ class WorkingController < ApplicationController
 	end
 	
 	def destroy
-	  @working = Working.find(params[:id])
+	  @working = Working.find_by_slug(params[:slug])
 	  @working.destroy
 	  
 	  redirect_to working_index_path
@@ -44,6 +44,6 @@ class WorkingController < ApplicationController
 	
 	private
 	  def working_params
-	  	params.require(:working).permit(:title, :subtitle, :body)
+	  	params.require(:working).permit(:title, :subtitle, :slug, :body)
 	  end
 end
