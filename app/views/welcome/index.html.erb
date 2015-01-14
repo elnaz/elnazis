@@ -5,8 +5,12 @@
 
 <h2>Blog</h2>
 <%= render 'writing/list' %>
-<p class="more-items"><%= link_to raw('Read more <i class="fa fa-angle-right"></i>'), writing_index_path %></p>
+<% if @writings.count > 4 %>
+  <p class="more-items"><%= link_to raw('Read more <i class="fa fa-angle-right"></i>'), writing_index_path %></p>
+<% end %>
 
 <h2 id="projects">Projects</h2>
 <%= render 'working/list' %>
-<p class="more-items"><%= link_to raw('View more <i class="fa fa-angle-right"></i>'), working_index_path %></p>
+<% if @workings.count > 6 %>
+  <p class="more-items"><%= link_to raw('View more <i class="fa fa-angle-right"></i>'), working_index_path %></p>
+<% end %>
