@@ -2,7 +2,7 @@
 
 <h1 id="post-title"><%= yield :title %></h1>
 			
-<p class="r" id="post-date"><%= @writing.published_at.strftime("%b %-d, %Y") %></p>
+<p class="r" id="post-date"><%= raw @writing.published_at.strftime("%b %-d, %Y") %></p>
 
 <div id="post-body">
   <!-- <span id="post-image"><%= image_tag @writing.image.url(:detail) %></span> -->
