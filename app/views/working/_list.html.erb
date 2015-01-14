@@ -2,6 +2,7 @@
 	<% @workings.each do |working| %>
 	<li>
 		<a href="<%= working_path(working) %>">
+		  <%= image_tag working.image.url(:medium) %>
 			<p class="project"><%= working.title %> <span class="subtitle"><%= working.subtitle %></span></p>
 		</a>
 	</li>	

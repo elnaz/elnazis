@@ -44,6 +44,6 @@ class WorkingController < ApplicationController
 	
 	private
 	  def working_params
-	  	params.require(:working).permit(:title, :subtitle, :slug, :body)
+	  	params.require(:working).permit(:title, :subtitle, :slug, :body, :image)
 	  end
 end
