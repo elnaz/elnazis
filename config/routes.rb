@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/about', to: 'static_pages#about'
   
   resources :working, param: :slug
-  resources :writing
+  resources :writing, param: :slug
   resources :messages
 
   # You can have the root of your site routed with "root"

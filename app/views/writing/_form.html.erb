@@ -14,12 +14,14 @@
     <dt><%= f.label :title %></dt>
   	<dd class="field"><%= f.text_field :title, :class => 'txt-med' %></dd>	 
   	
+  	<dt><%= f.label :slug %></dt>
+  	<dd class="field"><%= f.text_field :slug, :class => 'txt-med' %></dd>
+  	
   	<dt><%= f.label :body %></dt>
   	<dd class="field"><%= f.text_area :body, :class => 'txt', :rows => 15 %></dd>
   	
   	<dt><%= f.label :image %></dt>
   	<dd class="field"><%= f.file_field :image %></dd>
-  
   	 
   	<dt><%= f.label :published_at %></dt>
   	<dd class="field"><%= f.date_field :published_at, :value => Time.now.strftime('%Y-%m-%d') %></dd>	 

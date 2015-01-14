@@ -1,7 +1,7 @@
 <ul class="posts">
 	<% @writings.each do |writing| %>
 	<li>
-		<a href="<%= writing_path(writing.id) %>">
+		<a href="<%= writing_path(writing) %>">
 			<%= image_tag writing.image.url(:medium) %>
 			<p class="title"><%= writing.title %><span class="date"><%= writing.published_at.strftime("%b %-d, %Y") %></span></p>
 		</a>

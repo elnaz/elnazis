@@ -7,7 +7,7 @@ class WritingController < ApplicationController
 	end
 	
 	def show
-	  @writing = Writing.find(params[:id])
+	  @writing = Writing.find_by_slug(params[:slug])
 	end
 	
 	def new
@@ -15,7 +15,7 @@ class WritingController < ApplicationController
 	end
 	
 	def edit
-	  @writing = Writing.find(params[:id])
+	  @writing = Writing.find_by_slug(params[:slug])
 	end
 	
 	def create
@@ -29,7 +29,7 @@ class WritingController < ApplicationController
 	end
 	
 	def update 
-	  @writing = Writing.find(params[:id])
+	  @writing = Writing.find_by_slug(params[:slug])
 	  
 	  if @writing.update(writing_params)
 	    redirect_to @writing
@@ -39,7 +39,7 @@ class WritingController < ApplicationController
 	end
 	
 	def destroy
-	  @writing = Writing.find(params[:id])
+	  @writing = Writing.find_by_slug(params[:slug])
 	  @writing.destroy
 	  
 	  redirect_to writing_index_path
@@ -47,6 +47,6 @@ class WritingController < ApplicationController
 	
 	private
 	  def writing_params
-	  	params.require(:writing).permit(:title, :body, :image, :published_at)
+	  	params.require(:writing).permit(:title, :slug, :body, :image, :published_at)
 	  end
 end

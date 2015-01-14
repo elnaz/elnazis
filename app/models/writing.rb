@@ -6,6 +6,11 @@ class Writing < ActiveRecord::Base
     :styles => { :detail => "400x400", :medium => "200x200>", :thumb => "100x100>" }, 
     :default_url => "http://dummyimage.com/200"
 
-  validates_presence_of :title, :body, :published_at
+  validates_presence_of :title, :slug, :body, :published_at
+  validates :slug, uniqueness: { case_sensitive: false }, format: { with: Regexp.new('\A' + Elnazis::SLUG_FORMAT.source + '\z') }
   validates_attachment :image, :presence => true, :content_type => { :content_type => "image/jpeg" }
+  
+  def to_param
+    slug
+  end  
 end
