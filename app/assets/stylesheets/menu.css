@@ -1,11 +1,12 @@
 @media screen and (max-width: 945px){
 	#menu {
 	    background: #76B543;
+	    margin-right: 4%;
 	    overflow: scroll;
 	    position: absolute;
-      right: -300px;
+		right: -200px;
 	    top: 0;
-	    width: 200px;
+	    width: 175px;
 	    z-index: 1000;
 	}
 	#menu ul { list-style: none; }

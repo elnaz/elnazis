@@ -1,7 +1,7 @@
 var ready = function(){
   //mobile menu
   $('#menu-toggle').on('click', function (e) {    
-    $('#menu').show().css({ right: '0px'});
+    $('#menu').slideDown(30, 'linear').css({ right: '0px'});
     e.stopPropagation();
     return false; 
   });    
