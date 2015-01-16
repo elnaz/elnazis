@@ -38,6 +38,7 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'newrelic_rpm'
 gem 'paperclip', '~> 4.2'
 gem 'paperclip-dropbox', '>= 1.1.7'
 gem 'rails_12factor', group: :production
