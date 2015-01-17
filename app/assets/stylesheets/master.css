@@ -132,7 +132,7 @@ p { font-size: 1.2em; }
 .projects { float: left; list-style: none; margin-top: 0px; margin-bottom: 0px; padding-left: 0px; width: 100%; }
 .projects li { background: #3E3D3D; display: inline-block; margin: 0px 3px 8px 0px; max-width: 300px; width: 32%; }
 .projects li a { color: #fff; }
-.projects li img { height: 150px; width: 100%; }
+.projects li img { width: 100%; }
 
 	.project { font-size: 1.2em; margin: 0px; padding: 5px; }
 	.project .subtitle { display:block; font-size: 0.8em; }

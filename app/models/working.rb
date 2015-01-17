@@ -3,7 +3,7 @@ class Working < ActiveRecord::Base
     :storage => :dropbox,
     :dropbox_credentials => Rails.root.join('config/dropbox.yml'),
     :dropbox_options => {},
-    :styles => { :detail => "400x400", :medium => "250x150>", :thumb => "100x100>" }, 
+    :styles => { :medium => "x150" }, 
     :default_url => "http://dummyimage.com/200"
 
   validates_presence_of :title, :subtitle, :slug, :body
