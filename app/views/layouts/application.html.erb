@@ -21,7 +21,6 @@
 					<li><%= link_to 'Blog', writing_index_path, class: navClass('writing') %></li>
 					<li><%= link_to 'Projects', working_index_path, class: navClass('working') %></li>
 					<li><%= link_to 'About', about_path, class: navClass('about') %></li>
-					<li><%= link_to 'Contact', '#contact' %></li>
 				</ul>
 			</div>
 			<div class="clear"></div>	
@@ -68,8 +67,7 @@
 			<li class=<%= navClass('welcome') %>><i class="fa fa-home"></i><%= link_to 'Home', root_path %></li>
       <li class=<%= navClass('writing') %>><i class="fa fa-newspaper-o"></i><%= link_to 'Blog', writing_index_path %></li>
       <li class=<%= navClass('working') %>><i class="fa fa-bullhorn"></i><%= link_to 'Projects', working_index_path %></li>
-      <li class=<%= navClass('about') %>><i class="fa fa-info-circle"></i><%= link_to 'About', about_path %></li>
-      <li><i class="fa fa-send-o"></i><%= link_to 'Contact', '#contact' %></li> 
+      <li class=<%= navClass('about') %>><i class="fa fa-info-circle"></i><%= link_to 'About', about_path %></li> 
 		</ul>
 	</div>	
 </body>
