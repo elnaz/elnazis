@@ -42,6 +42,8 @@ p { font-size: 1.2em; }
 .form label.error { color: #621268; font-weight: bold; }
 .form input.error, .form textarea.error { border: 2px solid #621268; }
 
+.mute { color: #7f7f7f; font-size: 1em; }
+
 .txt, .txt-med, .txt-num {
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -128,6 +130,10 @@ p { font-size: 1.2em; }
 .posts li img { height: 150px; width: 100%; }
 .posts .date { display: block; font-size: 0.8em; margin-top: 8px; }
 .posts .title { font-size: 1em; margin: 0; padding: 5px; }
+
+.preview { border: 1px solid #000; width: 100%; }
+
+#project-body h3 { margin-top: 0; }
 
 .projects { float: left; list-style: none; margin-top: 0px; margin-bottom: 0px; padding-left: 0px; width: 100%; }
 .projects li { background: #3E3D3D; display: inline-block; margin: 0px 3px 8px 0px; max-width: 300px; width: 32%; }
