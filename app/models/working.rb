@@ -8,7 +8,7 @@ class Working < ActiveRecord::Base
 
   validates_presence_of :title, :subtitle, :slug, :body
   validates :slug, uniqueness: { case_sensitive: false }, format: { with: Regexp.new('\A' + Elnazis::SLUG_FORMAT.source + '\z') }
-  validates_attachment :image, :presence => true, :content_type => { :content_type => "image/jpeg" }
+  validates_attachment :image, :presence => true, :content_type => { :content_type => ["image/jpeg", "image/gif", "image/png"] }
   
   def to_param
     slug
