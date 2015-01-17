@@ -1,6 +1,6 @@
 class WorkingController < ApplicationController
   def index
-    @workings = Working.all
+    @workings = Working.all.order(:sort_order)
   end
   
   def show
@@ -44,6 +44,6 @@ class WorkingController < ApplicationController
 	
 	private
 	  def working_params
-	  	params.require(:working).permit(:title, :subtitle, :slug, :body, :image)
+	  	params.require(:working).permit(:title, :subtitle, :slug, :body, :sort_order, :image)
 	  end
 end
