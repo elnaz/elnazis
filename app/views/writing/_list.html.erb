@@ -3,7 +3,8 @@
 	<li>
 		<a href="<%= writing_path(writing) %>">
 			<%= image_tag writing.image.url(:medium) %>
-			<p class="title"><%= writing.title %><span class="date"><%= writing.published_at.strftime("%b %-d, %Y") %></span></p>
+			<p class="title"><%= writing.title %></p>
+			<p class="date"><%= writing.published_at.strftime("%b %-d, %Y") %></p>
 		</a>
 	</li>	
 	<% end %>
