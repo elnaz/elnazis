@@ -120,7 +120,7 @@ p { font-size: 1.2em; }
 .posts li { background: #1F1F1F; display: inline-block; margin: 0px 5px 8px 0px; max-width: 300px; width: 24%; }
 .posts li a { color: #fff; font-weight: 300; }
 .posts li a:hover { background: none; }
-.posts li img { min-width: 130px; width: 100%; }
+.posts li img { min-width: 108px; width: 100%; }
 .posts .date { font-size: 0.8em; margin: 0px; padding: 0px 5px 5px; }
 .posts .title { font-size: 1em; margin: 0px; padding: 5px; }
 
@@ -133,7 +133,7 @@ p { font-size: 1.2em; }
 .projects li { background: #1F1F1F; display: inline-block; margin: 0px 3px 8px 0px; max-width: 300px; width: 32%; }
 .projects li a { color: #fff; font-weight: 300; }
 .projects li a:hover { background: none; } 
-.projects li img { min-width: 130px; width: 100%; }
+.projects li img { min-width: 108px; width: 100%; }
 .projects .title { font-size: 1.1em; margin: 0px; padding: 5px; }
 .projects .subtitle { font-size: 0.8em; margin: 0px; padding: 0px 5px 5px; }
 	
