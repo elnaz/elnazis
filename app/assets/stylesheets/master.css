@@ -134,7 +134,7 @@ p { font-size: 1.2em; }
 .projects li a { color: #fff; font-weight: 300; }
 .projects li a:hover { background: none; } 
 .projects li img { min-width: 99px; width: 100%; }
-.projects .title { font-size: 0.85em; margin: 0px; padding: 5px; }
+.projects .title { font-size: 1.2em; margin: 0px; padding: 5px; }
 .projects .subtitle { font-size: 0.8em; margin: 0px; padding: 0px 5px 5px; }
 	
 

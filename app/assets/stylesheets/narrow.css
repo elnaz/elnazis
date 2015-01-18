@@ -29,5 +29,8 @@
 	.posts .title { font-size: 1.1em; }
 		
 	.projects li { width: 100%; max-width: 100%; }
-	.projects li img { float: left; margin-right: 8px; max-height: 100px; width: 25%; }
+	/*
+  .projects li img { float: left; margin-right: 8px; max-height: 100px; width: 25%; }
+	.projects .title { font-size: 0.85em; }
+  */
 }
