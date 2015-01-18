@@ -1,4 +1,6 @@
 @media screen and (max-width: 945px){	
+	#footer {	padding-bottom: 350px; }
+	
 	#menu {
 	    background: #76B543;
 	    margin-right: 4%;
