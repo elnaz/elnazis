@@ -90,15 +90,6 @@ p { font-size: 1.2em; }
 #logo span { display: inline-block; font-weight: 300; line-height: 40px; }
 
 #menu, #menu-toggle { display: none; }
-#menu-toggle { 
-	color: #000; 
-	float: right; 
-	font-size: 1.1em;
-	font-weight: bold;
-	padding-right: 15px; 
-	margin-top: 15px; 
-	text-transform: uppercase; 
-}
 
 .more-items { 
 	font-size: 0.9em; 

@@ -22,7 +22,7 @@
 	#logo a { height: 40px; margin-right: 5px; width: 40px; } 
 	#logo span { line-height: 35px; }
 	
-	#menu-toggle { font-size: 1em; margin-top: 10px; padding: 0; }
+	#menu-toggle { font-size: 1em; margin-top: 10px; }
 	
 	.posts li { overflow: auto;  width: 100%; max-width: 100%; }
 	.posts li img { float: left; height: auto; width: 25%; min-height: 75px; }
