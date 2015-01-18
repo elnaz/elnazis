@@ -25,7 +25,9 @@
 	#menu-toggle { font-size: 1em; margin-top: 10px; }
 	
 	.posts li { overflow: auto;  width: 100%; max-width: 100%; }
-	.posts li img { float: left; margin-right: 8px; max-height: 100px; width: 25%; }
+	.posts li img { float: left; margin-right: 8px; width: 25%; }
+	.posts .date { font-size: 0.6em; }
+	.posts .title { font-size: 0.9em; }
 		
 	.projects li { width: 100%; max-width: 100%; }
 	/*
