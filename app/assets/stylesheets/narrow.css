@@ -30,5 +30,4 @@
 		
 	.projects li { width: 100%; max-width: 100%; }
 	.projects li img { float: left; margin-right: 8px; width: 25%; }
-	.projects .title { font-size: 1.1em; }
 }
