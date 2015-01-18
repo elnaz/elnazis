@@ -117,7 +117,7 @@ p { font-size: 1.2em; }
 #post-title { float: left; text-transform: none; }
 
 .posts { float: left; list-style: none; margin-top: 0px; margin-bottom: 0px; padding-left: 0px; width: 100%; }
-.posts li { background: #3E3D3D; display: inline-block; margin: 0px 5px 8px 0px; max-width: 300px; width: 24%; }
+.posts li { background: #1F1F1F; display: inline-block; margin: 0px 5px 8px 0px; max-width: 300px; width: 24%; }
 .posts li a { color: #fff; font-weight: 300; }
 .posts li a:hover { background: none; }
 .posts li img { height: 150px; width: 100%; }
@@ -130,7 +130,7 @@ p { font-size: 1.2em; }
 #project-body h3 { margin-top: 0; }
 
 .projects { float: left; list-style: none; margin-top: 0px; margin-bottom: 0px; padding-left: 0px; width: 100%; }
-.projects li { background: #3E3D3D; display: inline-block; margin: 0px 3px 8px 0px; max-width: 300px; width: 32%; }
+.projects li { background: #1F1F1F; display: inline-block; margin: 0px 3px 8px 0px; max-width: 300px; width: 32%; }
 .projects li a { color: #fff; font-weight: 300; }
 .projects li a:hover { background: none; } 
 .projects li img { width: 100%; }
