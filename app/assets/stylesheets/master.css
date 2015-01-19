@@ -22,6 +22,7 @@ p { font-size: 1.2em; }
 .c2r, .c3r { float: right; }
 .c3l { margin-right: 3%; }
 .c3l, .c3m, .c3r { width: 31%; }
+.c3-4 { width: 75%; }
 
 .r { float: right; }
 

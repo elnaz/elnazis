@@ -1,6 +1,6 @@
 @media screen and (max-width: 835px){
 	/* -------------------- Basics/Forms -------------------- */
-	.c2l, .c2r { float: none; width: auto; }
+	.c2l, .c2r, .c3-4 { float: none; width: auto; }
 	
 	.txt { width: 75%; }
 	
