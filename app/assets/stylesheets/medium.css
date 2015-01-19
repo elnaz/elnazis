@@ -10,7 +10,9 @@
 	#contact-links { margin-left: 20%; }
 	#contact-links li { margin-top: 15px; }
 		
+  #post-body { width: 100%; }
+  
 	.posts li { width: 48%; max-width: 275px; }
-	
+		
 	.projects li { width: 46%; }
 }

@@ -111,10 +111,10 @@ p { font-size: 1.2em; }
 
 .nav-content li { float: left; margin-right: 8px; }
 
-#post-body { clear: both; }
-#post-date { font-size: 0.9em; margin-top: 35px; }
+#post-body { font-size: 1.1em; width: 75%; }
+#post-date { font-size: 0.9em; }
 #post-image { float: right; margin-bottom: 10px; margin-left: 20px; }
-#post-title { float: left; text-transform: none; }
+#post-title { text-transform: none; }
 
 .posts { float: left; list-style: none; margin-top: 0px; margin-bottom: 0px; padding-left: 0px; width: 100%; }
 .posts li { background: #1F1F1F; display: inline-block; margin: 0px 9px 8px 0px; width: 23.5%; }
@@ -128,7 +128,7 @@ p { font-size: 1.2em; }
 .preview a:hover { background: none; }
 .preview img { border: 1px solid #000; max-width: 100%; }
 
-#project-body h3 { margin-top: 0; }
+#project-body { font-size: 1.1em; }
 
 .projects { float: left; list-style: none; margin-top: 0px; margin-bottom: 0px; padding-left: 0px; width: 100%; }
 .projects li { background: #1F1F1F; display: inline-block; margin: 0px 3px 8px 0px; max-width: 300px; width: 32%; }
