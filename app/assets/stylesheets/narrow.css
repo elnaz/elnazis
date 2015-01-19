@@ -28,6 +28,8 @@
 	.posts li img { float: left; margin-right: 8px; width: 25%; }
 	.posts .date { font-size: 0.6em; }
 	.posts .title { font-size: 0.9em; }
+	
+	.preview { float: none; margin: 0; width: 100%; }
 		
 	.projects li { width: 100%; max-width: 100%; }
 	/*

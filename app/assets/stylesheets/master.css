@@ -124,8 +124,9 @@ p { font-size: 1.2em; }
 .posts .date { font-size: 0.8em; margin: 0px; padding: 0px 5px 5px; }
 .posts .title { font-size: 1em; margin: 0px; padding: 5px; }
 
-.preview:hover { background: none; }
-.preview img { border: 1px solid #000; width: 100%; }
+.preview { float: right; margin-left: 20px; margin-top: 0; width: 50%; }
+.preview a:hover { background: none; }
+.preview img { border: 1px solid #000; max-width: 100%; }
 
 #project-body h3 { margin-top: 0; }
 
