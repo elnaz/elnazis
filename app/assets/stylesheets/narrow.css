@@ -6,7 +6,6 @@
 	.txt-med { min-width: 200px; }
 		
 	/* ----------------------- Main ------------------------- */
-	.about { width: 100%; }
 	.about p { font-weight: bolder; }
 	
 	#body {	padding: 0 20px 70px; }
