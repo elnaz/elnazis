@@ -121,7 +121,7 @@ p { font-size: 1.2em; font-weight: 400; }
 .posts li a:hover { background: none; }
 .posts li img { min-width: 115px; width: 100%; }
 .posts .date { font-size: 0.8em; margin: 0px; padding: 0px 5px 5px; }
-.posts .title { font-size: 1em; margin: 0px; padding: 5px; }
+.posts .title { font-size: 1em; margin: 0px; min-height: 2.5em; padding: 5px; }
 
 .preview { float: right; margin-left: 20px; margin-top: 0; width: 50%; }
 .preview a:hover { background: none; }
