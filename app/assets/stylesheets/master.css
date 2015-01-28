@@ -13,7 +13,7 @@ h1 { font-size: 1.8em; font-weight: bold; }
 h2 { font-size: 1.3em; font-weight: bold; text-transform: uppercase; }
 i { color: black; }
 input, textarea { font-size: 1em; }
-p { font-size: 1.2em; }
+p { font-size: 1.2em; font-weight: 400; }
 
 .clear { clear: both; }
 
