@@ -5,12 +5,12 @@
 
 <h2>Blog</h2>
 <%= render 'writing/list' %>
-<% if Writing.all.count > 4 %>
+<% if Writing.count > 4 %>
   <p class="more-items"><%= link_to raw('Read more <i class="fa fa-angle-right"></i>'), writing_index_path %></p>
 <% end %>
 
 <h2>Portfolio</h2>
 <%= render 'working/list' %>
-<% if Working.all.count > 6 %>
+<% if Working.count > 6 %>
   <p class="more-items"><%= link_to raw('View more <i class="fa fa-angle-right"></i>'), working_index_path %></p>
 <% end %>
