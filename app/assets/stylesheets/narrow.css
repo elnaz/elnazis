@@ -5,9 +5,7 @@
 	.txt { min-width: 200px; width: 75%; }
 	.txt-med { min-width: 200px; }
 		
-	/* ----------------------- Main ------------------------- */
-	.about p { font-weight: bolder; }
-	
+	/* ----------------------- Main ------------------------- */	
 	#body {	padding: 0 20px 70px; }
 	
 	#contact-links { margin-left: 15%; }
@@ -15,7 +13,7 @@
 	
 	#footer { padding-left: 70px; padding-right: 70px; }
 	
-	#intro { font-size: 1.2em; font-weight: bolder; }
+	#intro { font-size: 1.3em; }
 	
 	#logo { font-size: 1.3em; }
 	#logo a { height: 40px; margin-right: 5px; width: 40px; } 
