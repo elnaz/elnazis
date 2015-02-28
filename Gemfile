@@ -39,6 +39,7 @@ gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
 gem 'heroku-deflater', :group => :production
+gem 'jquery-validation-rails'
 gem 'newrelic_rpm'
 gem 'paperclip', '~> 4.2'
 gem 'paperclip-dropbox', '>= 1.1.7'

@@ -2,14 +2,11 @@
 <html>
 <head>
   <title><%= yield (:title) %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'favicon.png' %>
   <meta name="google-site-verification" content="gpemUCDpS30H2ndYB97Q28zQE2NvBxn9Ki853gGudn8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#76B543">
-  <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
 </head>
 <body>
 	<div id="body">
@@ -71,6 +68,8 @@
       <li class=<%= navClass('about') %>><i class="fa fa-info-circle"></i><%= link_to 'About', about_path %></li> 
       <li><i class="fa fa-send-o"></i><%= link_to 'Contact', '#contact' %></li>
 		</ul>
-	</div>	
+	</div>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
