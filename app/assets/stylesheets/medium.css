@@ -1,16 +1,13 @@
 @media screen and (max-width: 835px){
 	/* -------------------- Basics/Forms -------------------- */
 	.c2l, .c2r, .c3-4 { float: none; width: auto; }
-	
+
 	.txt { width: 75%; }
-	
-	/* ----------------------- Main ------------------------- */		
-	#contact-links { margin-left: 20%; }
-	#contact-links li { margin-top: 15px; }
-		
-  #post-body { width: 100%; }
-  
+
+	/* ----------------------- Main ------------------------- */
+	#post-body { width: 100%; }
+
 	.posts li { width: 48%; max-width: 275px; }
-		
+
 	.projects li { width: 46%; }
 }

@@ -61,12 +61,11 @@ p { font-size: 1.3em; }
 /* ----------------------- Main ------------------------- */
 #body {	margin-left: auto; margin-right: auto; max-width: 925px; padding: 0 35px 70px; } 
 
-#contact-form { margin: 0; }
-#contact-links { list-style: none; padding-left: 0px; margin: 0px 40px; width: 100%; }
+#contact-links { list-style: none; margin-left: auto; margin-right: auto; max-width: 900px; }
 #contact-links i { color: #1F1E1E; }
-#contact-links li { float:left; padding-right: 6%; }
+#contact-links li { float: left; margin: 0 4.25%; }
 
-#footer { background: #76B543; padding: 2px 60px 70px; }
+#footer { background: #76B543; bottom: 0; padding: 1% 5% 5%; position: absolute; width: 100%; }
 
 #header { margin-bottom: 20px; }
 

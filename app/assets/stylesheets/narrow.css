@@ -8,10 +8,9 @@
 	/* ----------------------- Main ------------------------- */	
 	#body {	padding: 0 20px 70px; }
 	
-	#contact-links { margin-left: 15%; }
-	#contact-links li { margin-top: 15px; }
+	#contact-links li { margin: 0 3%; }
 	
-	#footer { padding-left: 70px; padding-right: 70px; }
+	#footer { padding: 1% 2% 5%; }
 	
 	#intro { font-size: 1.3em; }
 	
@@ -29,8 +28,4 @@
 	.preview { float: none; margin: 0; width: 100%; }
 		
 	.projects li { width: 100%; max-width: 100%; }
-	/*
-  .projects li img { float: left; margin-right: 8px; max-height: 100px; width: 25%; }
-	.projects .title { font-size: 0.85em; }
-  */
 }
